@@ -1,4 +1,4 @@
-/*global CSSLint*/
+/*global CSSLint, JSON */
 CSSLint.addFormatter({
     //format information
     id: "json",

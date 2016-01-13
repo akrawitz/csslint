@@ -5,7 +5,7 @@
  * @extends parserlib.util.EventTarget
  */
 
-/* global parserlib, clone, Reporter */
+/* global parserlib, Reporter */
 /* exported CSSLint */
 
 var CSSLint = (function() {
@@ -207,7 +207,7 @@ var CSSLint = (function() {
 
         if (embeddedRuleset.test(text)) {
             //defensively copy so that caller's version does not get modified
-            ruleset = clone(ruleset);
+//            ruleset = clone(ruleset);
             ruleset = applyEmbeddedRuleset(text, ruleset);
         }
 
